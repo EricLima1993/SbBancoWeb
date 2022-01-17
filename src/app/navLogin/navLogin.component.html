@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Next</a>
+    <div class="container-fluid">
+      <form class="d-flex">
+        <h6>CPF: </h6>
+        <input name="cpf" id="cpf" #cpf class="form-control me-2" type="search" placeholder="CPF..." aria-label="cpf">
+        <h6>Senha: </h6>
+        <input name="senha" id="senha" #senha class="form-control me-2" type="password" placeholder="Senha..." aria-label="senha">
+        <button class="btn btn-outline-success" (click)="_cpf = cpf.value;_senha = senha.value; login()" type="submit">Entrar</button>
+        <button class="btn btn-outline-success" routerLink="/cadastro" type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+</nav>

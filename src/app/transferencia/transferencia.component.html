@@ -1,0 +1,9 @@
+<app-nav></app-nav>
+<h2>{{cliente.nome}}</h2>
+<h6>Digite a conta: </h6>
+<input name="conta" id="conta" #conta class="form-control me-2" type="search" placeholder="conta..." aria-label="conta">
+<h6>Digite o valor: </h6>
+<input name="valor" id="valor" #valor class="form-control me-2" type="search" placeholder="valor..." aria-label="valor">
+<h6>Digite a sua senha: </h6>
+<input name="senha" id="senha" #senha class="form-control me-2" type="password" placeholder="Senha..." aria-label="senha">
+<button class="btn btn-outline-success" (click)="_conta = conta.value;_valor = valor.value;_senha = senha.value; transferir(_conta,_valor,_senha)" type="submit">Transferir</button>

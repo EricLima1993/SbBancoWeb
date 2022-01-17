@@ -1,0 +1,15 @@
+<app-nav></app-nav>
+<table>
+  <tbody>
+    <tr *ngFor="let cartao of cliente.cartoes ">
+      <h6>Cartão: </h6>
+      <td>{{cartao.numero}}</td>
+      <h6>Nome Empresso: </h6>
+      <td>{{cartao.nomeCartao}}</td>
+      <h6>Seu Limite maximo é: </h6>
+      <td>{{cartao.limiteMax}}</td>
+      <h6>seu limite atual é :</h6>
+      <td>{{cartao.limite}}</td>
+    </tr>
+  </tbody>
+</table>
