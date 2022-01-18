@@ -13,9 +13,10 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { CartoesComponent } from './cartoes/cartoes.component';
 import { TransferenciaComponent } from './transferencia/transferencia.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { CartaoSolicitarComponent } from './CartaoSolicitar/CartaoSolicitar.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [						
     AppComponent,
     PrincipalComponent,
       NavComponent,
@@ -23,7 +24,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
       UsuarioComponent,
       CartoesComponent,
       TransferenciaComponent,
-      CadastroComponent
+      CadastroComponent,
+      CartaoSolicitarComponent
    ],
   imports: [
     BrowserModule,
