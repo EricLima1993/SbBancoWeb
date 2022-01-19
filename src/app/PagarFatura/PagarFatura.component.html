@@ -1,0 +1,16 @@
+<table>
+  <tbody>
+    <tr *ngFor="let cartao of cliente.cartoes ">
+      <h6>Cartão: </h6>
+      <td>{{cartao.numero}}</td>
+      <h6>Fatura: </h6>
+      <td>R$: {{cartao.limiteMax - cartao.limite}}</td>
+    </tr>
+  </tbody>
+</table>
+<h6>Selecione o Cartão</h6>
+<select name="cartaoN" id="cartaoN" #cartaoN >
+  <option *ngFor="let cartao of cliente.cartoes " value={{cartao.numero}}>{{cartao.numero}}</option>
+</select>
+<button class="btn btn-outline-success" (click)="pagar(cartaoN.value)" type="submit">Pagar</button>
+<button class="btn btn-outline-success" routerLink="/usuario" type="submit">Voltar</button>

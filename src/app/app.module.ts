@@ -14,9 +14,11 @@ import { CartoesComponent } from './cartoes/cartoes.component';
 import { TransferenciaComponent } from './transferencia/transferencia.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { CartaoSolicitarComponent } from './CartaoSolicitar/CartaoSolicitar.component';
+import { PagarFaturaComponent } from './PagarFatura/PagarFatura.component';
+import { CancelarCartaoComponent } from './CancelarCartao/CancelarCartao.component';
 
 @NgModule({
-  declarations: [						
+  declarations: [								
     AppComponent,
     PrincipalComponent,
       NavComponent,
@@ -25,7 +27,9 @@ import { CartaoSolicitarComponent } from './CartaoSolicitar/CartaoSolicitar.comp
       CartoesComponent,
       TransferenciaComponent,
       CadastroComponent,
-      CartaoSolicitarComponent
+      CartaoSolicitarComponent,
+      PagarFaturaComponent,
+      CancelarCartaoComponent
    ],
   imports: [
     BrowserModule,

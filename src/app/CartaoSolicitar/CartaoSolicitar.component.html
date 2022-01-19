@@ -3,7 +3,7 @@
   <option value="visa">Visa</option>
   <option value="americanExpress">American Express</option>
   <option value="mastercard" selected>MasterCard</option>
-  </select>
+</select>
 
 <h6>Limite: </h6>
 <input type="number" id="quantity" name="limite" id="limite" #limite min="500" max="{{(cliente.conta.saldo)+1000}}">
@@ -14,6 +14,6 @@
 <h6>Senha: </h6>
 <input name="senha" id="senha" #senha class="form-control me-2" type="password" placeholder="Senha..." aria-label="senha">
 <button class="btn btn-outline-success" (click)="solicitar(bandeira.value,limite.value,nome.value,validade.value,senha.value)" type="submit">Cadastrar</button>
-<button class="btn btn-outline-success" routerLink="/transferencia" [state]="{ cliente: 'cliente' }" type="submit">Voltar</button>
+<button class="btn btn-outline-success" routerLink="/usuario" [state]="{ cliente: 'cliente' }" type="submit">Voltar</button>
 
 
