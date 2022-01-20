@@ -6,6 +6,7 @@ import { CartaoSolicitarComponent } from './CartaoSolicitar/CartaoSolicitar.comp
 import { CartoesComponent } from './cartoes/cartoes.component';
 import { PagarFaturaComponent } from './PagarFatura/PagarFatura.component';
 import { PixComponent } from './Pix/Pix.component';
+import { PoupancaComponent } from './Poupanca/Poupanca.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { TransferenciaComponent } from './transferencia/transferencia.component';
 import { UsuarioComponent } from './usuario/usuario.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: "pagarfatura", component: PagarFaturaComponent},
   {path: "cancelarcartao", component: CancelarCartaoComponent},
   {path: "pix", component: PixComponent},
+  {path: "poupanca", component: PoupancaComponent},
   {path: "",  redirectTo: "principal" , pathMatch: 'full'}
 ];
 

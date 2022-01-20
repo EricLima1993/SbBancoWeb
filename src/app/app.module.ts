@@ -17,9 +17,10 @@ import { CartaoSolicitarComponent } from './CartaoSolicitar/CartaoSolicitar.comp
 import { PagarFaturaComponent } from './PagarFatura/PagarFatura.component';
 import { CancelarCartaoComponent } from './CancelarCartao/CancelarCartao.component';
 import { PixComponent } from './Pix/Pix.component';
+import { PoupancaComponent } from './Poupanca/Poupanca.component';
 
 @NgModule({
-  declarations: [									
+  declarations: [										
     AppComponent,
     PrincipalComponent,
       NavComponent,
@@ -31,7 +32,8 @@ import { PixComponent } from './Pix/Pix.component';
       CartaoSolicitarComponent,
       PagarFaturaComponent,
       CancelarCartaoComponent,
-      PixComponent
+      PixComponent,
+      PoupancaComponent
    ],
   imports: [
     BrowserModule,
