@@ -1,0 +1,11 @@
+<app-nav></app-nav>
+<h1>Gerar</h1>
+<h6>Digite o valor do pix: </h6>
+<input type="number" id="valor" name="valor" id="valor" #valor min="1" max="500">
+<button class="btn btn-outline-success" (click)="gerar(valor.value)" type="submit">Gerar</button>
+<button class="btn btn-outline-success" (click)="mostrar()" type="submit">mostrar</button>
+<div [innerHTML]="codigoG" ><h6>{{pix.codigo}}</h6></div>
+<h1>Pagar</h1>
+<h6>Digite o codigo do pix: </h6>
+<input name="codigo" id="codigo" #codigo class="form-control me-2" type="search" placeholder="codigo..." aria-label="codigo">
+<button class="btn btn-outline-success" (click)="pagar(codigo.value)" type="submit">Pagar</button>
