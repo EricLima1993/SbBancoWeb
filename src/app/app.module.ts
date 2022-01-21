@@ -18,9 +18,12 @@ import { PagarFaturaComponent } from './PagarFatura/PagarFatura.component';
 import { CancelarCartaoComponent } from './CancelarCartao/CancelarCartao.component';
 import { PixComponent } from './Pix/Pix.component';
 import { PoupancaComponent } from './Poupanca/Poupanca.component';
+import { ConfiguracaoComponent } from './Configuracao/Configuracao.component';
+import { MudarEnderecoComponent } from './mudarEndereco/mudarEndereco.component';
+import { MudarSenhaComponent } from './mudarSenha/mudarSenha.component';
 
 @NgModule({
-  declarations: [										
+  declarations: [
     AppComponent,
     PrincipalComponent,
       NavComponent,
@@ -33,7 +36,10 @@ import { PoupancaComponent } from './Poupanca/Poupanca.component';
       PagarFaturaComponent,
       CancelarCartaoComponent,
       PixComponent,
-      PoupancaComponent
+      PoupancaComponent,
+      ConfiguracaoComponent,
+      MudarEnderecoComponent,
+      MudarSenhaComponent
    ],
   imports: [
     BrowserModule,

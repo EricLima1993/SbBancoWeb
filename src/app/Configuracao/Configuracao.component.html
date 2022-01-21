@@ -1,0 +1,14 @@
+<app-nav></app-nav>
+<h1>Configurações</h1>
+<h6>Troca de senha:</h6>
+<p>
+  <button class="btn btn-outline-success" routerLink="/editarsenha" [state]="{ cliente: 'cliente' }" type="submit">Mudar Senha</button>
+</p>
+<h6>mudar endereço:</h6>
+<p>
+  <button class="btn btn-outline-success" routerLink="/editarendereco" [state]="{ cliente: 'cliente' }" type="submit">Mudar Endereço</button>
+</p>
+<h6>Cancelamneto de conta:</h6>
+<p>
+  <button class="btn btn-outline-success" (click)="cancelamento()" type="submit">Cancelar Conta</button>
+</p>

@@ -4,6 +4,9 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { CancelarCartaoComponent } from './CancelarCartao/CancelarCartao.component';
 import { CartaoSolicitarComponent } from './CartaoSolicitar/CartaoSolicitar.component';
 import { CartoesComponent } from './cartoes/cartoes.component';
+import { ConfiguracaoComponent } from './Configuracao/Configuracao.component';
+import { MudarEnderecoComponent } from './mudarEndereco/mudarEndereco.component';
+import { MudarSenhaComponent } from './mudarSenha/mudarSenha.component';
 import { PagarFaturaComponent } from './PagarFatura/PagarFatura.component';
 import { PixComponent } from './Pix/Pix.component';
 import { PoupancaComponent } from './Poupanca/Poupanca.component';
@@ -22,6 +25,10 @@ const routes: Routes = [
   {path: "cancelarcartao", component: CancelarCartaoComponent},
   {path: "pix", component: PixComponent},
   {path: "poupanca", component: PoupancaComponent},
+  {path: "configuracao", component: ConfiguracaoComponent},
+  {path: "editarsenha", component: MudarSenhaComponent},
+  {path: "editarendereco", component: MudarEnderecoComponent},
+
   {path: "",  redirectTo: "principal" , pathMatch: 'full'}
 ];
 
