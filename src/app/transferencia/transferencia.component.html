@@ -1,9 +1,27 @@
 <app-nav></app-nav>
 <h2>{{cliente.nome}}</h2>
-<h6>Digite a conta: </h6>
-<input name="conta" id="conta" #conta class="form-control me-2" type="search" placeholder="conta..." aria-label="conta">
+<h6>qual conta vai usar para tranferencia:</h6>
+<select id="conta" name="conta" #conta>
+  <option value="Corrente">Corrente</option>
+  <option value="Poupanca">Poupanca</option>
+</select>
+<h6>Para qual tipo de conta voc~e vai fazer a transferencia:</h6>
+<select id="contaAReceber" name="contaAReceber" #contaAReceber>
+  <option value="Corrente">Corrente</option>
+  <option value="Poupanca">Poupanca</option>
+</select>
+<h6>Qual tipo de transferencia você vai fazer: </h6>
+<select id="tipoT" name="tipoT" #tipoT>
+  <option value="Normal">Normal</option>
+  <option value="Pix">Pix</option>
+</select>
+<h6>Digite a conta(Caso  seja transferencia normal): </h6>
+<input name="contaN" id="contaN" #contaN class="form-control me-2" type="search" placeholder="conta..." aria-label="contaN">
+<h6>Digite a chave pix(Caso  seja transferencia via pix): </h6>
+<input name="chave" id="chave" #chave class="form-control me-2" type="search" placeholder="chave..." aria-label="chave">
 <h6>Digite o valor: </h6>
 <input name="valor" id="valor" #valor class="form-control me-2" type="search" placeholder="valor..." aria-label="valor">
 <h6>Digite a sua senha: </h6>
 <input name="senha" id="senha" #senha class="form-control me-2" type="password" placeholder="Senha..." aria-label="senha">
-<button class="btn btn-outline-success" (click)="_conta = conta.value;_valor = valor.value;_senha = senha.value; transferir(_conta,_valor,_senha)" type="submit">Transferir</button>
+
+<button class="btn btn-outline-success" (click)="_conta = contaN.value;_valor = valor.value;_senha = senha.value; transferir(_conta,_valor,_senha,conta.value,contaAReceber.value,tipoT.value,chave.value)" type="submit">Transferir</button>
