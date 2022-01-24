@@ -13,7 +13,27 @@
 <input type="date" id="validade" name="validade" #validade min="2025-01-01"  max="2050-01-02">
 <h6>Senha: </h6>
 <input name="senha" id="senha" #senha class="form-control me-2" type="password" placeholder="Senha..." aria-label="senha">
-<button class="btn btn-outline-success" (click)="solicitar(bandeira.value,limite.value,nome.value,validade.value,senha.value)" type="submit">Cadastrar</button>
+
+<h6>Deseja seguro de vida</h6>
+<select id="seguroMorte" name="seguroMorte" #seguroMorte>
+  <option value="Sim">Sim(36,00/Ano)</option>
+  <option value="Nao">Não</option>
+</select>
+<h6>Deseja seguro por invalidez</h6>
+<select id="seguroInvalidez" name="seguroInvalidez" #seguroInvalidez>
+  <option value="Sim">Sim(26,00/Ano)</option>
+  <option value="Nao">Não</option>
+</select>
+<h6>Deseja seguro desemprego</h6>
+<select id="seguroDesemprego" name="seguroDesemprego" #seguroDesemprego>
+  <option value="Sim">Sim(16,00/Ano)</option>
+  <option value="Nao">Não</option>
+</select>
+
+<h6>por quanto tempo deseja o seguro:: </h6>
+<input type="number" name="tempoSeguro" id="tempoSeguro" #tempoSeguro min="0" max="10">
+
+<button class="btn btn-outline-success" (click)="solicitar(bandeira.value,limite.value,nome.value,validade.value,senha.value,seguroMorte.value,seguroInvalidez.value,seguroDesemprego.value,tempoSeguro.value)" type="submit">Cadastrar</button>
 <button class="btn btn-outline-success" routerLink="/usuario" [state]="{ cliente: 'cliente' }" type="submit">Voltar</button>
 
 

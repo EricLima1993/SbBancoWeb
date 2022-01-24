@@ -8,6 +8,16 @@
 <p>
   <button class="btn btn-outline-success" routerLink="/editarendereco" [state]="{ cliente: 'cliente' }" type="submit">Mudar Endereço</button>
 </p>
+<h6>Cadastro de chave pix:</h6>
+<input name="chave" id="chave" #chave class="form-control me-2" type="search" placeholder="chave..." aria-label="chave">
+<p>
+  <button class="btn btn-outline-success" (click)="cadastroPix(chave.value)" type="submit">Cadastrar chave</button>
+</p>
+<h6>Mudar a chave pix:</h6>
+<input name="novaChave" id="novaChave" #novaChave class="form-control me-2" type="search" placeholder="nova chave..." aria-label="novaChave">
+<p>
+  <button class="btn btn-outline-success" (click)="mudarChavePix(novaChave.value)" type="submit">Mudar chave</button>
+</p>
 <h6>Cancelamneto de conta:</h6>
 <p>
   <button class="btn btn-outline-success" (click)="cancelamento()" type="submit">Cancelar Conta</button>

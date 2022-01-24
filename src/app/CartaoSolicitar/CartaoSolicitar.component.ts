@@ -19,12 +19,22 @@ export class CartaoSolicitarComponent implements OnInit {
     this.dadosCliente();
   }
 
-  public solicitar(bandeira: String,limite:String,nome:String,validade:String,senha:String):void{
+  public solicitar(bandeira: String,limite:String,nome:String,validade:String,senha:String,seguroMorte:String,seguroInvalidez:String,seguroDesemprego:String,tempoSeguro:String):void{
     this.cartao.limiteMax = limite;
     this.cartao.limite = limite;
     this.cartao.nomeCartao = nome;
     this.cartao.validade = validade;
     this.cartao.senha = senha;
+    if(seguroMorte == "Sim"){
+      this.cartao.seguroMorte = true;
+    }
+    if(seguroInvalidez == "Sim"){
+      this.cartao.seguroInvalidez = true;
+    }
+    if(seguroDesemprego == "Sim"){
+      this.cartao.seguroDesemprego= true;
+    }
+    this.cartao.anosContratacaoApolice = tempoSeguro;
 
     this.http.post("http://localhost:8080/cartoes/solicitacao?id="+this.cliente.id+"&bandeira="+bandeira,this.cartao).subscribe();
     this.router.navigateByUrl('/usuario');
@@ -42,4 +52,8 @@ class Cartao{
   nomeCartao: any;
   validade: any;
   senha: any;
+  seguroMorte: any;
+  seguroInvalidez: any;
+  seguroDesemprego: any;
+  anosContratacaoApolice:any;
 }
