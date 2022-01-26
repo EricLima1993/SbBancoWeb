@@ -1,8 +1,9 @@
+<html>
+<h1>Cancelamento do cartão</h1>
 <table>
   <tbody>
     <tr *ngFor="let cartao of cliente.cartoes ">
-      <h6>Cartão: </h6>
-      <td>{{cartao.numero}}</td>
+      <td><h6>Cartão: </h6>{{cartao.numero}}</td>
     </tr>
   </tbody>
 </table>
@@ -12,3 +13,4 @@
 </select>
 <button class="btn btn-outline-success" (click)="cancelar(cartaoN.value)" type="submit">Cancelar</button>
 <button class="btn btn-outline-success" routerLink="/usuario" type="submit">Voltar</button>
+</html>

@@ -1,7 +1,7 @@
 h6 {
   margin: 8px 0;
-  color: aliceblue;
-
+  color: #333;
+  margin-right: 10px;
 }
 input{
   max-width: 200px;
@@ -9,7 +9,12 @@ input{
 }
 button{
   right: 100px;
+  margin-right: 10px;
+  background-color: #333;
 
+}
+nav{
+  background-color: limegreen;
 }
 
 

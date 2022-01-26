@@ -1,12 +1,12 @@
 <app-nav></app-nav>
-<p>
-  Olá {{cliente.nome}}, seu saldo é {{cliente.conta.saldo}}!
-</p>
-<p>
-  O numero da sua conta corrente é {{cliente.conta.numeroConta}}! e é do tipo: {{cliente.tipo}}
-</p>
-<div [innerHTML]="numeroP" ></div>
-<p>
-  Seu endereço é {{cliente.endereco.logradouro}}, {{cliente.endereco.bairro}}, {{cliente.endereco.cidade}}
-</p>
-
+<html>
+  <h1>Olá {{cliente.nome}}, seu saldo é {{cliente.conta.saldo}}!</h1>
+  <hr>
+  <p>
+    O numero da sua conta corrente é {{cliente.conta.numeroConta}}! e é do tipo: {{cliente.tipo}}
+  </p>
+  <div [innerHTML]="numeroP" ></div>
+  <p>
+    Seu endereço é {{cliente.endereco.logradouro}}, {{cliente.endereco.bairro}}, {{cliente.endereco.cidade}}
+  </p>
+</html>

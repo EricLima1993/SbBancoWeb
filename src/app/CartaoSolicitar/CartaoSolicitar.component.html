@@ -1,3 +1,5 @@
+<html>
+<h1>Solicitação de cartão de credito</h1>
 <h6>Bandeira</h6>
 <select id="bandeira" name="bandeira" id="bandeira" #bandeira>
   <option value="visa">Visa</option>
@@ -35,5 +37,5 @@
 
 <button class="btn btn-outline-success" (click)="solicitar(bandeira.value,limite.value,nome.value,validade.value,senha.value,seguroMorte.value,seguroInvalidez.value,seguroDesemprego.value,tempoSeguro.value)" type="submit">Cadastrar</button>
 <button class="btn btn-outline-success" routerLink="/usuario" [state]="{ cliente: 'cliente' }" type="submit">Voltar</button>
-
+</html>
 

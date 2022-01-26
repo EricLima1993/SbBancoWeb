@@ -1,10 +1,10 @@
+<html>
+<h1>Pagamento de fatura</h1>
 <table>
   <tbody>
     <tr *ngFor="let cartao of cliente.cartoes ">
-      <h6>Cartão: </h6>
-      <td>{{cartao.numero}}</td>
-      <h6>Fatura: </h6>
-      <td>R$: {{cartao.limiteMax - cartao.limite}}</td>
+      <td><h6>Cartão: </h6>{{cartao.numero}}</td>
+      <td><h6>Fatura: </h6>R$: {{cartao.limiteMax - cartao.limite}}</td>
     </tr>
   </tbody>
 </table>
@@ -14,3 +14,4 @@
 </select>
 <button class="btn btn-outline-success" (click)="pagar(cartaoN.value)" type="submit">Pagar</button>
 <button class="btn btn-outline-success" routerLink="/usuario" type="submit">Voltar</button>
+</html>

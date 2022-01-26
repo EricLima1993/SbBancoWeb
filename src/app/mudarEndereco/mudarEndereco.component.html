@@ -1,3 +1,4 @@
+<html>
 <h1>Mudar endereço</h1>
 <h6>Logradouro: </h6>
 <input name="logradouro" id="logradouro" value="{{cliente.endereco.logradouro}}" #logradouro class="form-control me-2" type="search" placeholder="{{cliente.endereco.logradouro}}" aria-label="logradouro">
@@ -7,7 +8,8 @@
 <input name="bairro" id="bairro" value="{{cliente.endereco.bairro}}" #bairro class="form-control me-2" type="search" placeholder="{{cliente.endereco.bairro}}" aria-label="bairro">
 <h6>Numero: </h6>
 <input name="numero" id="numero" value="{{cliente.endereco.numero}}" #numero class="form-control me-2" type="search" placeholder="{{cliente.endereco.numero}}" aria-label="numero">
-<h6>uf: </h6>
+<h6>UF: </h6>
 <input name="uf" id="uf" value="{{cliente.endereco.uf}}" #uf class="form-control me-2" type="search" placeholder="{{cliente.endereco.uf}}" aria-label="uf">
 <button class="btn btn-outline-success" (click)="mudar(logradouro.value,bairro.value,cidade.value,numero.value,uf.value)" type="submit">Mudar</button>
 <button class="btn btn-outline-success" routerLink="/usuario" type="submit">Voltar</button>
+</html>

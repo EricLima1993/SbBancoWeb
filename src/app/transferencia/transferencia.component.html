@@ -1,11 +1,12 @@
 <app-nav></app-nav>
+<html>
 <h2>{{cliente.nome}}</h2>
 <h6>qual conta vai usar para tranferencia:</h6>
 <select id="conta" name="conta" #conta>
   <option value="Corrente">Corrente</option>
   <option value="Poupanca">Poupanca</option>
 </select>
-<h6>Para qual tipo de conta voc~e vai fazer a transferencia:</h6>
+<h6>Para qual tipo de conta você vai fazer a transferencia:</h6>
 <select id="contaAReceber" name="contaAReceber" #contaAReceber>
   <option value="Corrente">Corrente</option>
   <option value="Poupanca">Poupanca</option>
@@ -15,7 +16,9 @@
   <option value="Normal">Normal</option>
   <option value="Pix">Pix</option>
 </select>
-<h6>Digite a conta(Caso  seja transferencia normal): </h6>
+<div>
+
+<h6 style="margin-top: 50px;">Digite a conta(Caso  seja transferencia normal): </h6>
 <input name="contaN" id="contaN" #contaN class="form-control me-2" type="search" placeholder="conta..." aria-label="contaN">
 <h6>Digite a chave pix(Caso  seja transferencia via pix): </h6>
 <input name="chave" id="chave" #chave class="form-control me-2" type="search" placeholder="chave..." aria-label="chave">
@@ -24,4 +27,6 @@
 <h6>Digite a sua senha: </h6>
 <input name="senha" id="senha" #senha class="form-control me-2" type="password" placeholder="Senha..." aria-label="senha">
 
+</div>
 <button class="btn btn-outline-success" (click)="_conta = contaN.value;_valor = valor.value;_senha = senha.value; transferir(_conta,_valor,_senha,conta.value,contaAReceber.value,tipoT.value,chave.value)" type="submit">Transferir</button>
+</html>

@@ -1,18 +1,23 @@
 <app-nav></app-nav>
-<table>
+<html>
+<table   >
   <tbody>
+    <h3>Cartões</h3>
     <tr *ngFor="let cartao of cliente.cartoes ">
-      <h6>Cartão: </h6>
-      <td>{{cartao.numero}}</td>
-      <h6>Nome Empresso: </h6>
-      <td>{{cartao.nomeCartao}}</td>
-      <h6>Seu Limite maximo é: </h6>
-      <td>{{cartao.limiteMax}}</td>
-      <h6>seu limite atual é :</h6>
-      <td>{{cartao.limite}}</td>
+      <td><h6>Cartão:</h6>   {{cartao.numero}}</td>
+      <hr>
+      <td><h6>Nome Empresso:</h6>   {{cartao.nomeCartao}}</td>
+      <hr>
+      <td><h6>Seu Limite maximo é:</h6>   {{cartao.limiteMax}}</td>
+      <hr>
+      <td><h6>Seu limite atual é :</h6>   {{cartao.limite}}</td>
+      <hr>
+      <hr>
+      <hr>
     </tr>
   </tbody>
 </table>
 <button class="btn btn-outline-success"  routerLink="/cartaosolicitar" [state]="{ cliente: 'cliente' }" type="submit">Solicitar novo Cartão</button>
 <button class="btn btn-outline-success" routerLink="/pagarfatura" [state]="{ cliente: 'cliente' }" type="submit">Pagar Fatura</button>
 <button class="btn btn-outline-success" routerLink="/cancelarcartao" [state]="{ cliente: 'cliente' }" type="submit">Cancelar Cartão</button>
+</html>
